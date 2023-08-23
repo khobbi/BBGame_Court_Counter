@@ -14,12 +14,12 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun TeamScore(modifier: Modifier = Modifier, name: String, score: Int){
     Column(modifier = Modifier.padding(all = 16.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-        Text(text = name, color = MaterialTheme.colorScheme.secondary)
+        Text(text = name, color = MaterialTheme.colorScheme.onSurface)
         Text(
             text = score.toString(),
             fontSize = 50.sp,
             fontWeight = FontWeight.SemiBold,
-            color = MaterialTheme.colorScheme.secondary
+            color = MaterialTheme.colorScheme.onSurface
         )
     }
 }
